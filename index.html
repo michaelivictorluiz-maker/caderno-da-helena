@@ -25,11 +25,11 @@ h1,h2,h3{font-family:Lora,Georgia,serif;letter-spacing:-.02em}
 @keyframes brilho{60%,100%{transform:translateX(100%)}}
 .chip{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border-radius:99px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
 /* barra topo */
-.topo{background:var(--dark2);text-align:center;padding:8px 10px;font-size:clamp(8.5px,2.6vw,12px);font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:#cfe0f5}
+.topo{background:var(--dark2);text-align:center;padding:9px 10px;white-space:nowrap;overflow:hidden;font-size:clamp(9.5px,2.8vw,12px);font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:#cfe0f5}
 .topo i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--verde);margin-right:6px;vertical-align:middle;animation:pisca 1.6s infinite}
 @keyframes pisca{50%{opacity:.3}}
 /* HERO */
-.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--dark),var(--dark) 55%,#0b1d36);padding:48px 0}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--dark),var(--dark) 55%,#0b1d36);padding:32px 0 40px}
 .hero:before{content:"";position:absolute;inset:0;opacity:.04;background-image:radial-gradient(circle,#fff 1px,transparent 1px);background-size:32px 32px}
 .hero .g{position:relative;display:grid;gap:24px;align-items:center}
 .hero h1{font-size:clamp(30px,7.6vw,46px);color:#fff;font-weight:900;line-height:1.18;text-align:center}
@@ -37,16 +37,16 @@ h1,h2,h3{font-family:Lora,Georgia,serif;letter-spacing:-.02em}
 .hero .eb{display:block;text-align:center;margin-bottom:12px}
 .hero .eb .chip{background:rgba(242,182,50,.12);color:var(--amarelo);border:1px solid rgba(242,182,50,.35)}
 .hero .img{max-width:448px;margin:0 auto;width:100%}
-.hero .img .fr{border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.35);background:#F3EEE3}
+.hero .img .fr{aspect-ratio:1080/603;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.1);box-shadow:0 20px 50px rgba(0,0,0,.35);background:#F3EEE3}
 .hero .pg{margin-top:12px;text-align:center;font-size:12px;color:#bcd0ea}.hero .pg b{color:#8fd1ff;font-weight:600}
 .hero .tx{text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px}
 .hero .tx p{color:#d3e2f5;font-size:clamp(14px,3.8vw,18px)}
 .hero .pl{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#8fd1ff}.hero .pl b{color:#fff;font-size:19px;font-weight:800;letter-spacing:0;margin-left:6px}
 .hero .ms{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 16px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#9aa8b8}
 .hero .ms span:before{content:"✓ ";color:var(--verde)}
-@media(min-width:1024px){.hero{padding:96px 0 80px}.hero .g{grid-template-columns:7fr 5fr;column-gap:48px}.hero h1,.hero .eb{text-align:left}.hero .img{grid-column:2;grid-row:1/3;max-width:none}.hero .tx{align-items:flex-start;text-align:left}.hero .btn{width:auto}.hero .ms{justify-content:flex-start}}
-.faixa{background:#f4f4f5;overflow:hidden;white-space:nowrap;padding:12px 0;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#a1a1aa}
-.faixa div{display:inline-block;animation:corre 40s linear infinite}.faixa span{margin:0 24px}.faixa span:before{content:"★ ";color:var(--laranja)}
+@media(min-width:1024px){.hero .eb{display:none}.hero{padding:96px 0 80px}.hero .g{grid-template-columns:7fr 5fr;column-gap:48px}.hero h1,.hero .eb{text-align:left}.hero .img{grid-column:2;grid-row:1/3;max-width:none}.hero .tx{align-items:flex-start;text-align:left}.hero .btn{width:auto}.hero .ms{justify-content:flex-start}}
+.faixa{background:#f4f4f5;text-align:center;white-space:nowrap;padding:12px 0;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#a1a1aa}
+.faixa span{margin:0 12px}.faixa span:before{content:"★ ";color:var(--laranja)}
 @keyframes corre{to{transform:translateX(-50%)}}
 /* DO QUE SE TRATA */
 .trata{background:#F2F0EB;padding:52px 0}
@@ -69,7 +69,7 @@ h1,h2,h3{font-family:Lora,Georgia,serif;letter-spacing:-.02em}
 /* O QUE MUDA */
 .muda{background:var(--bege);padding:44px 0}
 .mc{background:#fff;border:1px solid #f4f4f5;border-radius:32px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04);display:flex;flex-direction:column}
-.mc .im{aspect-ratio:16/10;background:#EEF1F6;overflow:hidden}.mc .im img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.mc .im{aspect-ratio:16/10;background:#EEF1F6;overflow:hidden}.mc .im img{width:100%;height:100%;object-fit:cover}
 .mc .c{padding:22px}
 .mc h3{font-family:Inter,sans-serif;font-size:18px;font-weight:900;color:var(--dark);text-transform:uppercase;letter-spacing:-.01em;line-height:1.2;margin-bottom:8px}
 .mc p{color:#71717a;font-size:13.5px;font-weight:500}
@@ -170,12 +170,13 @@ footer a{color:#cbd5e1;text-decoration:none;margin:0 8px}
 .flut small{display:block;font-size:12px;color:#6b6b6b;font-weight:500}.flut b{font-size:16px}
 .flut a{min-height:48px;padding:0 24px;background:var(--laranja);color:#fff;font-weight:900;border-radius:10px;text-decoration:none;display:flex;align-items:center;letter-spacing:.08em}
 @media(min-width:768px){.flut{display:none}footer{padding-bottom:40px}}
+@media(max-width:767px){.so-pc{display:none!important}}
 .rv{opacity:0;transform:translateY(18px);transition:all .6s}.rv.on{opacity:1;transform:none}
 </style>
 </head>
 <body>
 
-<div class="topo"><i></i>Guia digital · Acesso imediato por e-mail · Garantia de 15 dias</div>
+<div class="topo"><i></i>Guia digital · Acesso imediato · Garantia de 15 dias</div>
 
 <!-- HERO (estrutura Horta) -->
 <header class="hero">
@@ -183,7 +184,7 @@ footer a{color:#cbd5e1;text-decoration:none;margin:0 8px}
   <div><span class="eb"><span class="chip">Da série Fala Baixinho</span></span>
    <h1>Uma criança que te ouve à primeira: <span>menos gritos, mais calma em casa.</span></h1></div>
   <div class="img">
-   <div class="fr"><img src="img/capa.webp" width="680" height="680" alt="O Caderno da Helena: caderno e fichas para imprimir" fetchpriority="high"></div>
+   <div class="fr"><img src="img/hero.webp" width="1080" height="603" alt="A Helena e o Tomás com O Caderno da Helena" fetchpriority="high"></div>
    <p class="pg">Pagamento único · <b>MB WAY, Multibanco ou cartão</b></p>
   </div>
   <div class="tx">
@@ -194,19 +195,18 @@ footer a{color:#cbd5e1;text-decoration:none;margin:0 8px}
   </div>
  </div>
 </header>
-<div class="faixa" aria-hidden="true"><div><span>Feito para famílias portuguesas</span><span>Técnicas do treino parental</span><span>Para pais e avós</span><span>Feito para famílias portuguesas</span><span>Técnicas do treino parental</span><span>Para pais e avós</span><span>Feito para famílias portuguesas</span><span>Técnicas do treino parental</span><span>Para pais e avós</span><span>Feito para famílias portuguesas</span><span>Técnicas do treino parental</span><span>Para pais e avós</span></div></div>
+<div class="faixa"><span>Técnicas do treino parental</span><span>Para pais e avós</span></div>
 
 <!-- DO QUE SE TRATA -->
 <section class="trata">
  <div class="wrap">
-  <div style="text-align:center"><span class="chip" style="background:rgba(249,115,22,.1);color:var(--laranja)">📒 Do que se trata</span></div>
-  <h2 class="tit" style="margin-top:12px">O caderno que a Helena <span>gostaria de ter tido</span></h2>
+  <h2 class="tit">O caderno que a Helena <span>gostaria de ter tido</span></h2>
   <div class="l">
    <div class="it rv"><i>🎬</i><div><b>Nasceu da série que já viste</b><p>Em Fala Baixinho, a Helena tem de manter o filho em silêncio para sobreviver. Cada episódio termina com uma regra que resulta.</p></div></div>
    <div class="it rv"><i>📄</i><div><b>Agora as regras estão no papel</b><p>Um PDF com as 8 ferramentas da série: o que dizer, o que fazer e fichas para colar no frigorífico.</p></div></div>
    <div class="it rv"><i>👨‍👩‍👧</i><div><b>Para quem cuida todos os dias</b><p>Pais e avós de crianças dos 4 aos 10 anos, com PHDA ou simplesmente muito agitadas.</p></div></div>
   </div>
-  <div class="fecho rv"><small>O que a Helena descobriu no Dia 1</small><p>O problema não é a criança. <span>É a forma como as ordens lhe chegam.</span></p></div>
+  <div class="fecho rv"><p>O problema não é a criança. <span>É a forma como as ordens lhe chegam.</span></p></div>
  </div>
 </section>
 
@@ -217,26 +217,24 @@ footer a{color:#cbd5e1;text-decoration:none;margin:0 8px}
   <p class="sub">Os 4 momentos do dia que ficam mais leves:</p>
   <div class="car" data-car style="margin-top:26px">
    <div class="trk no-sb">
-    <div class="mc"><div class="im"><img src="img/r1.webp" alt="A Helena fala de perto com o Tomás" loading="lazy"></div><div class="c"><h3>Ele ouve à primeira</h3><p>Acabam as dez repetições até ao grito. Uma ordem curta, de perto e com uma missão, e ele faz.</p></div></div>
-    <div class="mc"><div class="im"><img src="img/r2.webp" alt="A Helena aponta para o quadro da rotina" loading="lazy"></div><div class="c"><h3>Manhãs sem guerra</h3><p>Sai de casa vestido, calçado e a horas. Tu apontas para o cartão em vez de repetir.</p></div></div>
-    <div class="mc"><div class="im"><img src="img/d4.webp" alt="" loading="lazy" style="object-fit:contain;padding:18px"></div><div class="c"><h3>Birras mais curtas</h3><p>Ele aprende a dizer o que sente antes de explodir, e tu sabes o que dizer quando explode.</p></div></div>
-    <div class="mc"><div class="im"><img src="img/r3.webp" alt="A Helena elogia o Tomás" loading="lazy"></div><div class="c"><h3>Menos culpa, mais orgulho</h3><p>Voltas a elogiar mais do que a ralhar, e ao fim do dia ainda te sobra paciência.</p></div></div>
+    <div class="mc"><div class="im"><img src="img/cena-ouve.webp" width="640" height="400" alt="A Helena fala de perto com o Tomás" loading="lazy"></div><div class="c"><h3>Ele ouve à primeira</h3><p>Acabam as dez repetições até ao grito. Uma ordem curta, de perto e com uma missão, e ele faz.</p></div></div>
+    <div class="mc"><div class="im"><img src="img/cena-manha.webp" width="640" height="400" alt="O Tomás na cozinha de manhã" loading="lazy"></div><div class="c"><h3>Manhãs sem guerra</h3><p>Sai de casa vestido, calçado e a horas. Tu apontas para o cartão em vez de repetir.</p></div></div>
+    <div class="mc"><div class="im"><img src="img/cena-calma.webp" width="640" height="400" alt="O Tomás calmo e feliz" loading="lazy"></div><div class="c"><h3>Birras mais curtas</h3><p>Ele aprende a dizer o que sente antes de explodir, e tu sabes o que dizer quando explode.</p></div></div>
+    <div class="mc"><div class="im"><img src="img/cena-pontos.webp" width="640" height="400" alt="O quadro de pontos do Tomás" loading="lazy"></div><div class="c"><h3>Menos culpa, mais orgulho</h3><p>Voltas a elogiar mais do que a ralhar, e ao fim do dia ainda te sobra paciência.</p></div></div>
    </div>
    <div class="nav"><button data-p aria-label="Anterior">‹</button><div class="dots"></div><button data-n aria-label="Seguinte">›</button></div>
   </div>
-  <p class="rodape"><b>Mudança real</b>Se te revês nestes momentos, o caderno foi feito para ti.</p>
  </div>
 </section>
 
 <!-- A SÉRIE É FICÇÃO. A CIÊNCIA NÃO (dinâmica) -->
 <section class="cien">
  <div class="wrap">
-  <div style="text-align:center"><span class="chip">🔬 A base por trás</span></div>
-  <h2 class="tit" style="margin-top:12px">A série é ficção. <span style="color:var(--amarelo)">A ciência não.</span></h2>
+  <h2 class="tit">A série é ficção. <span style="color:var(--amarelo)">A ciência não.</span></h2>
   <p class="sub">Cada regra da Helena é uma técnica do treino parental comportamental, a primeira recomendação das diretrizes de pediatria para crianças com PHDA.</p>
-  <div class="nums"><div><b data-c="8">0</b><span>técnicas</span></div><div><b data-c="3">0</b><span>bónus</span></div><div><b data-c="5">0</b><span>min por dia</span></div></div>
+  <div class="nums so-pc"><div><b data-c="8">0</b><span>técnicas</span></div><div><b data-c="3">0</b><span>bónus</span></div><div><b data-c="5">0</b><span>min por dia</span></div></div>
   <div class="rot" id="rot">
-   <div class="im"><img class="on" src="img/r1.webp" alt=""><img src="img/p2.webp" alt=""><img src="img/p4.webp" alt=""><img src="img/p5.webp" alt=""></div>
+   <div class="im"><img class="on" src="img/cena-ouve.webp" alt=""><img src="img/cena-pontos.webp" alt=""><img src="img/p4.webp" alt=""><img src="img/p5.webp" alt=""></div>
    <div class="c">
     <div class="lin fade">
      <div class="serie"><small>Na série</small><p id="r-s"></p></div>
@@ -247,8 +245,8 @@ footer a{color:#cbd5e1;text-decoration:none;margin:0 8px}
     <div class="dots" id="r-dots"></div>
    </div>
   </div>
-  <div class="selos"><span><b>AAP</b>Academia Americana de Pediatria</span><span><b>NICE</b>Reino Unido</span><span><b>CDC</b>EUA</span></div>
-  <p class="nota">Sem promessas de cura nem diagnósticos. O caderno ajuda no dia a dia, ao lado do pediatra ou do psicólogo.</p>
+  <div class="selos so-pc"><span><b>AAP</b>Academia Americana de Pediatria</span><span><b>NICE</b>Reino Unido</span><span><b>CDC</b>EUA</span></div>
+  <p class="nota so-pc">Sem promessas de cura nem diagnósticos. O caderno ajuda no dia a dia, ao lado do pediatra ou do psicólogo.</p>
  </div>
 </section>
 
@@ -270,14 +268,14 @@ footer a{color:#cbd5e1;text-decoration:none;margin:0 8px}
    </div>
    <div class="nav"><button data-p aria-label="Anterior">‹</button><div class="dots"></div><button data-n aria-label="Seguinte">›</button></div>
   </div>
-  <div class="cta-w"><a class="btn" href="#bonus">Quero o caderno da Helena <span>→</span></a></div>
+  <div class="cta-w so-pc"><a class="btn" href="#bonus">Quero o caderno da Helena <span>→</span></a></div>
  </div>
 </section>
 
 <!-- BÓNUS (estrutura Horta) -->
 <section class="bon" id="bonus">
  <div class="wrap">
-  <div style="text-align:center"><span class="chip">🎁 Bónus exclusivos</span></div>
+  <div class="so-pc" style="text-align:center"><span class="chip">🎁 Bónus exclusivos</span></div>
   <h2 class="tit" style="margin-top:10px">3 bónus <span>para usar logo hoje</span></h2>
   <p class="sub">Ao entrar hoje, recebes também:</p>
   <div class="car" data-car style="margin-top:26px">
@@ -312,7 +310,7 @@ footer a{color:#cbd5e1;text-decoration:none;margin:0 8px}
    <div class="dia">pagamento único · menos de 50 cêntimos por dia no 1.º mês</div>
    <a class="btn checkout" href="https://pay.hotmart.com/A108236610C?checkoutMode=10">Quero o meu caderno</a>
    <div class="mc2">Acesso enviado de imediato para o teu e-mail</div>
-   <div class="gar"><img class="selo" src="https://protocolo-horta-pt-fnil.vercel.app/img/selo-garantia-14-dias.webp" width="1080" height="1080" alt="Selo de garantia" loading="lazy"><p><b>Risco zero.</b> Experimenta durante 15 dias. Se não ajudar em casa, basta uma mensagem e devolvemos 100% do valor.</p></div>
+   <div class="gar"><img class="selo" src="img/selo-garantia.webp" width="200" height="200" alt="Selo de garantia" loading="lazy"><p><b>Risco zero.</b> Experimenta durante 15 dias. Se não ajudar em casa, basta uma mensagem e devolvemos 100% do valor.</p></div>
   </div>
   <p class="met">MB WAY • MULTIBANCO • VISA / MASTERCARD</p>
   <p class="mbw">Para receber já, paga com MB WAY ou cartão. No Multibanco, o acesso chega depois de pagares a referência.</p>
