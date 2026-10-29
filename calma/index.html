@@ -144,6 +144,15 @@ h1,h2,h3{font-family:Lora,Georgia,serif;letter-spacing:-.02em}
 .cd .v{font-size:clamp(46px,12vw,60px);font-weight:900;color:#fff;line-height:1}
 .cd .dia{font-size:13px;color:#cbd5e1;margin:8px 0 20px}
 .cd .btn{border-radius:10px}
+.planos{display:grid;gap:34px;max-width:520px;margin:28px auto 0;align-items:center}
+.planos .cd{margin:0;max-width:none}
+@media(min-width:900px){.planos{grid-template-columns:1fr 1.12fr;max-width:1000px;gap:28px}}
+.cd.ess{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.2);box-shadow:none}
+.cd.ess .nm{font-size:18px}
+.cd.ess .v{font-size:clamp(36px,9vw,44px);color:#e2e8f0}
+.cd .naot{text-align:left;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#94a3b8;margin:-6px 0 8px}
+.cd ul.nao{gap:6px}.cd ul.nao li{color:#94a3b8;font-size:13px}.cd ul.nao li:before{content:"✕";color:#f87171;font-size:11px;top:1px}
+.cd .btn.sec{background:transparent;background-image:none;border:2px solid rgba(255,255,255,.4);color:#fff;box-shadow:none}
 .cd .mc2{font-size:11px;color:#94a3b8;margin-top:10px}
 .gar{display:flex;gap:14px;align-items:center;text-align:left;margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1)}
 .gar .selo{flex:0 0 96px;width:96px;height:96px;margin:0;object-fit:contain}
@@ -299,11 +308,32 @@ p{text-wrap:pretty}
 <section class="pre" id="preco">
  <div class="wrap">
   <h2 class="tit">Começa ainda hoje</h2>
-  <p class="sub">Tudo incluído, num único pagamento</p>
+  <p class="sub">Escolhe a tua edição. Pagamento único, sem mensalidades.</p>
+  <div class="planos">
+  <div class="cd ess">
+   <div class="nm">Edição essencial</div>
+   <div class="tl">Para começar pelo mais urgente</div>
+   <ul>
+    <li><b>4 ferramentas:</b> ordens que funcionam, quadro de pontos, cartões de rotina e termómetro das emoções</li>
+    <li>Bónus 1: as 8 regras da Helena</li>
+    <li>PDF para o telemóvel e para imprimir, acesso imediato</li>
+   </ul>
+   <p class="naot">Não inclui:</p>
+   <ul class="nao">
+    <li>30 missões (vestir, arrumar, TPC)</li>
+    <li>50 pausas de movimento</li>
+    <li>Kit de quem cuida e diário das forças</li>
+    <li>Guião para a família e kit para saídas</li>
+   </ul>
+   <div class="v">7,90 €</div>
+   <div class="dia">pagamento único</div>
+   <a class="btn checkout sec" href="https://pay.hotmart.com/PENDENTE-ESSENCIAL?checkoutMode=10&amp;src=paginaB">Quero a edição essencial</a>
+   <div class="mc2">Garantia de 15 dias</div>
+  </div>
   <div class="cd">
-   <span class="bdg">Edição completa</span>
-   <div class="nm">O Caderno da Helena</div>
-   <div class="tl">Menos birras, mais foco, manhãs mais tranquilas</div>
+   <span class="bdg">Mais escolhido</span>
+   <div class="nm">Edição completa</div>
+   <div class="tl">O dobro das ferramentas e os 3 bónus</div>
    <ul>
     <li>O caderno completo com as <b>8 ferramentas</b></li>
     <li>40 frases, 40 cartões de rotina, 30 missões e 50 pausas</li>
@@ -312,10 +342,11 @@ p{text-wrap:pretty}
     <li>PDF para o telemóvel e para imprimir, acesso imediato</li>
    </ul>
    <div class="v">14,90 €</div>
-   <div class="dia">pagamento único · menos de 50 cêntimos por dia no 1.º mês</div>
-   <a class="btn checkout" href="https://pay.hotmart.com/A108236610C?checkoutMode=10&amp;src=paginaB">Quero o meu caderno</a>
+   <div class="dia">pagamento único · só mais 7 € pelo dobro das ferramentas</div>
+   <a class="btn checkout" href="https://pay.hotmart.com/A108236610C?checkoutMode=10&amp;src=paginaB">Quero a edição completa</a>
    <div class="mc2">Acesso enviado de imediato para o teu e-mail</div>
    <div class="gar"><img class="selo" src="../img/selo-garantia.webp" width="200" height="200" alt="Selo de garantia"><p><b>Risco zero.</b> Experimenta durante 15 dias. Se não ajudar em casa, basta uma mensagem e devolvemos 100% do valor.</p></div>
+  </div>
   </div>
   <p class="met">MB WAY • MULTIBANCO • VISA / MASTERCARD</p>
   <p class="mbw">Para receber já, paga com MB WAY ou cartão. No Multibanco, o acesso chega depois de pagares a referência.</p>
@@ -324,8 +355,8 @@ p{text-wrap:pretty}
 
 <section class="faqs" id="faq">
  <h2 class="tit">Perguntas frequentes</h2>
- <details class="fq"><summary>Como recebo o caderno?</summary><p>Logo após o pagamento, recebes no teu e-mail o acesso ao caderno e aos 3 bónus. Com MB WAY ou cartão é imediato; no Multibanco, chega assim que a referência for paga.</p></details>
- <details class="fq"><summary>O pagamento é único?</summary><p>Sim. Pagas 14,90 € uma vez e o caderno é teu. Sem mensalidades nem assinaturas.</p></details>
+ <details class="fq"><summary>Como recebo o caderno?</summary><p>Logo após o pagamento, recebes no teu e-mail o acesso ao caderno e aos bónus da tua edição. Com MB WAY ou cartão é imediato; no Multibanco, chega assim que a referência for paga.</p></details>
+ <details class="fq"><summary>O pagamento é único?</summary><p>Sim. Pagas uma vez (7,90 € a edição essencial ou 14,90 € a completa) e o caderno é teu. Sem mensalidades nem assinaturas.</p></details>
  <details class="fq"><summary>Para que idades serve?</summary><p>Foi pensado para crianças dos 4 aos 10 anos. As fichas de emoções e de rotina também resultam com irmãos mais novos.</p></details>
  <details class="fq"><summary>Não tem diagnóstico nenhum, só se distrai muito e faz birras. Serve?</summary><p>Sim. O caderno foi feito para o dia a dia de qualquer criança que se distrai, não pára quieta ou explode por pouco. Se suspeitas de algo mais, fala com o pediatra: o caderno não faz diagnósticos.</p></details>
  <details class="fq"><summary>Ajuda nos trabalhos de casa?</summary><p>Sim. As 30 missões incluem os TPC em blocos curtos, e as 50 pausas de movimento ajudam-no a voltar à mesa sem discussão.</p></details>
