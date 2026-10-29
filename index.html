@@ -120,7 +120,7 @@ h1,h2,h3{font-family:Lora,Georgia,serif;letter-spacing:-.02em}
 .bon{background:#F4F7F5;border-top:1px solid #e4e4e7;border-bottom:1px solid #e4e4e7;padding:44px 0}
 .bon .chip{background:rgba(16,185,129,.1);color:#047857}
 .bc{background:#fff;border-radius:16px;overflow:hidden;border:1px solid rgba(15,36,64,.05);box-shadow:0 12px 40px rgba(15,36,64,.06);display:flex;flex-direction:column}
-.bc .im{position:relative;background:#F3EEE3;padding:20px 20px 0}.bc .im img{max-height:250px;margin:0 auto;object-fit:contain}
+.bc .im{position:relative;aspect-ratio:1/1;overflow:hidden}.bc .im img{width:100%;height:100%;object-fit:cover}
 .bc .nb{position:absolute;top:14px;left:14px;background:var(--laranja);color:#fff;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;padding:4px 12px;border-radius:99px;box-shadow:0 4px 10px rgba(0,0,0,.15);z-index:2}
 .bc .c{padding:20px;text-align:center;display:flex;flex-direction:column;flex:1}
 .bc h3{font-size:19px;font-weight:700;color:var(--dark);margin-bottom:4px}
@@ -185,7 +185,7 @@ footer a{color:#cbd5e1;text-decoration:none;margin:0 8px}
   <div><span class="eb"><span class="chip">Da série Fala Baixinho</span></span>
    <h1>Uma criança que te ouve à primeira: <span>menos gritos, mais calma em casa.</span></h1></div>
   <div class="img">
-   <div class="fr"><img src="img/hero.webp" width="1080" height="603" alt="A Helena e o Tomás com O Caderno da Helena" fetchpriority="high"></div>
+   <div class="fr"><img src="img/hero.webp" width="1200" height="670" alt="A Helena e o Tomás com O Caderno da Helena" fetchpriority="high"></div>
    <p class="pg">Pagamento único · <b>MB WAY, Multibanco ou cartão</b></p>
   </div>
   <div class="tx">
@@ -218,10 +218,10 @@ footer a{color:#cbd5e1;text-decoration:none;margin:0 8px}
   <p class="sub">Os 4 momentos do dia que ficam mais leves:</p>
   <div class="car" data-car style="margin-top:26px">
    <div class="trk no-sb">
-    <div class="mc"><div class="im"><img src="img/cena-ouve.webp" width="640" height="400" alt="A Helena fala de perto com o Tomás" loading="lazy"></div><div class="c"><h3>Ele ouve à primeira</h3><p>Acabam as dez repetições até ao grito. Uma ordem curta, de perto e com uma missão, e ele faz.</p></div></div>
-    <div class="mc"><div class="im"><img src="img/cena-manha.webp" width="640" height="400" alt="O Tomás na cozinha de manhã" loading="lazy"></div><div class="c"><h3>Manhãs sem guerra</h3><p>Sai de casa vestido, calçado e a horas. Tu apontas para o cartão em vez de repetir.</p></div></div>
-    <div class="mc"><div class="im"><img src="img/cena-calma.webp" width="640" height="400" alt="O Tomás calmo e feliz" loading="lazy"></div><div class="c"><h3>Birras mais curtas</h3><p>Ele aprende a dizer o que sente antes de explodir, e tu sabes o que dizer quando explode.</p></div></div>
-    <div class="mc"><div class="im"><img src="img/cena-pontos.webp" width="640" height="400" alt="O quadro de pontos do Tomás" loading="lazy"></div><div class="c"><h3>Menos culpa, mais orgulho</h3><p>Voltas a elogiar mais do que a ralhar, e ao fim do dia ainda te sobra paciência.</p></div></div>
+    <div class="mc"><div class="im"><img src="img/cena-ouve.webp" width="800" height="500" alt="A Helena fala de perto com o Tomás" loading="lazy"></div><div class="c"><h3>Ele ouve à primeira</h3><p>Acabam as dez repetições até ao grito. Uma ordem curta, de perto e com uma missão, e ele faz.</p></div></div>
+    <div class="mc"><div class="im"><img src="img/cena-manha.webp" width="800" height="500" alt="A Helena e o Tomás com o quadro da manhã" loading="lazy"></div><div class="c"><h3>Manhãs sem guerra</h3><p>Sai de casa vestido, calçado e a horas. Tu apontas para o cartão em vez de repetir.</p></div></div>
+    <div class="mc"><div class="im"><img src="img/cena-calma.webp" width="800" height="500" alt="A Helena acalma o Tomás" loading="lazy"></div><div class="c"><h3>Birras mais curtas</h3><p>Ele aprende a dizer o que sente antes de explodir, e tu sabes o que dizer quando explode.</p></div></div>
+    <div class="mc"><div class="im"><img src="img/cena-pontos.webp" width="800" height="500" alt="A Helena elogia o Tomás" loading="lazy"></div><div class="c"><h3>Menos culpa, mais orgulho</h3><p>Voltas a elogiar mais do que a ralhar, e ao fim do dia ainda te sobra paciência.</p></div></div>
    </div>
    <div class="nav"><button data-p aria-label="Anterior">‹</button><div class="dots"></div><button data-n aria-label="Seguinte">›</button></div>
   </div>
@@ -281,9 +281,9 @@ footer a{color:#cbd5e1;text-decoration:none;margin:0 8px}
   <p class="sub">Ao entrar hoje, recebes também:</p>
   <div class="car" data-car style="margin-top:26px">
    <div class="trk no-sb">
-    <div class="bc"><div class="im"><span class="nb">Bónus 1</span><img src="img/b1.webp" alt="As 8 regras da Helena" loading="lazy"></div><div class="c"><h3>As 8 regras da Helena</h3><span class="tg">Folha de frigorífico</span><p>Os 8 cartões de regra da série numa folha. Uma regra por dia, sempre à vista.</p><div class="ft"><span>Incluído no caderno</span><b>GRÁTIS</b></div></div></div>
-    <div class="bc"><div class="im"><span class="nb">Bónus 2</span><img src="img/b2.webp" alt="O que dizer à família" loading="lazy"></div><div class="c"><h3>O que dizer à família</h3><span class="tg">Guião pronto</span><p>A PHDA explicada em 1 minuto e a mensagem pronta para o grupo da família. Todos a seguir as mesmas regras.</p><div class="ft"><span>Incluído no caderno</span><b>GRÁTIS</b></div></div></div>
-    <div class="bc"><div class="im"><span class="nb">Bónus 3</span><img src="img/b3.webp" alt="Kit para saídas" loading="lazy"></div><div class="c"><h3>Kit para saídas</h3><span class="tg">Supermercado, carro, consultas</span><p>Cartões de missão para sair de casa sem drama e a lista da mochila calma.</p><div class="ft"><span>Incluído no caderno</span><b>GRÁTIS</b></div></div></div>
+    <div class="bc"><div class="im"><span class="nb">Bónus 1</span><img src="img/bonus-1.webp" width="480" height="480" alt="As 8 regras da Helena" loading="lazy"></div><div class="c"><h3>As 8 regras da Helena</h3><span class="tg">Folha de frigorífico</span><p>Os 8 cartões de regra da série numa folha. Uma regra por dia, sempre à vista.</p><div class="ft"><span>Incluído no caderno</span><b>GRÁTIS</b></div></div></div>
+    <div class="bc"><div class="im"><span class="nb">Bónus 2</span><img src="img/bonus-2.webp" width="480" height="480" alt="O que dizer à família" loading="lazy"></div><div class="c"><h3>O que dizer à família</h3><span class="tg">Guião pronto</span><p>A PHDA explicada em 1 minuto e a mensagem pronta para o grupo da família. Todos a seguir as mesmas regras.</p><div class="ft"><span>Incluído no caderno</span><b>GRÁTIS</b></div></div></div>
+    <div class="bc"><div class="im"><span class="nb">Bónus 3</span><img src="img/bonus-3.webp" width="480" height="480" alt="Kit para saídas" loading="lazy"></div><div class="c"><h3>Kit para saídas</h3><span class="tg">Supermercado, carro, consultas</span><p>Cartões de missão para sair de casa sem drama e a lista da mochila calma.</p><div class="ft"><span>Incluído no caderno</span><b>GRÁTIS</b></div></div></div>
    </div>
    <div class="nav"><button data-p aria-label="Anterior">‹</button><div class="dots"></div><button data-n aria-label="Seguinte">›</button></div>
   </div>
@@ -299,7 +299,6 @@ footer a{color:#cbd5e1;text-decoration:none;margin:0 8px}
    <span class="bdg">Edição completa</span>
    <div class="nm">O Caderno da Helena</div>
    <div class="tl">Uma criança que te ouve à primeira, sem gritos</div>
-   <img src="img/capa.webp" alt="" loading="lazy">
    <ul>
     <li>O caderno completo com as <b>8 ferramentas</b></li>
     <li>40 frases, 40 cartões de rotina, 30 missões e 50 pausas</li>
